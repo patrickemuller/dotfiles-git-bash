@@ -8,8 +8,12 @@ source_bash_files() {
         "bash_aliases"
         "bash_exports"
         "bash_functions"
+        "bash_logout"
         "bash_options"
-        "bash_prompt"
+        "bashrc"
+        "curlrc"
+        "inputrc"
+        "screenrc"
         "bash.local"  # for local settings that should
                       # not be under version control
     )
