@@ -33,7 +33,7 @@ alias rebase_master="git checkout master && git pull origin master && git checko
 alias rebase_staging="git checkout staging && git pull origin staging && git checkout - && git rebase staging"
 alias merge_master="git checkout master && git pull --rebase && git checkout - && git rebase master && git checkout master && git merge -"
 alias delete_merged="git branch --merged | grep -v '^* master$' | grep -v '^  master$' | grep -v '^* staging$' | grep -v '^  staging$' | xargs git branch -d"
-alias clean_branches="git checkout master && git pull origin master &&  git checkout staging && git pull origin staging && git remote update --prune && delete_merged"
+alias clean_branches="git checkout master && git pull origin master &&  git checkout staging && git pull origin staging && git checkout master && git remote update --prune && delete_merged"
 
 # ----------------------------------------------------------------------
 # | Rails                                                              |
