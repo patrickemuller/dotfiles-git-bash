@@ -27,4 +27,4 @@ sh setup.sh
 
 3. Restart your Terminal
 
-Done!
+4. Done!
