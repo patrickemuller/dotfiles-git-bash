@@ -5,12 +5,10 @@ declare i=""
 declare -r -a FILES_TO_SOURCE=(
   "bash_aliases"
   "bash_exports"
-  "bash_logout"
   "bash_options"
-  "bashrc"
-  "curlrc"
   "inputrc"
-  "screenrc"
+  "bash_profile"
+  "bashrc"
 )
 
 for i in ${!FILES_TO_SOURCE[*]}; do
