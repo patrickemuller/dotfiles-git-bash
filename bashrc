@@ -7,14 +7,11 @@ source_bash_files() {
     declare -r -a FILES_TO_SOURCE=(
         "bash_aliases"
         "bash_exports"
-        "bash_functions"
         "bash_logout"
         "bash_options"
         "curlrc"
         "inputrc"
         "screenrc"
-        "bash.local"  # for local settings that should
-                      # not be under version control
     )
 
     for i in ${!FILES_TO_SOURCE[*]}; do
