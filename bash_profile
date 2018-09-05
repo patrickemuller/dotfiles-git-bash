@@ -10,6 +10,7 @@ source_bash_files() {
         "bash_exports"
         "bash_options"
         "bash_logout"
+        "bash_prompt"
         "inputrc"
     )
 
@@ -37,4 +38,4 @@ unset -f source_bash_files
 
 # Clear system messages (e.g.: system copyright notice, the
 # date and time of the last login, the message of the day, etc.)
-# clear
+clear

@@ -10,6 +10,7 @@ declare -r -a FILES_TO_SOURCE=(
   "bash_logout"
   "bash_options"
   "bash_profile"
+  "bash_prompt"
   "bashrc"
   "inputrc"
 )
