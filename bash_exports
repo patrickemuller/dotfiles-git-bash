@@ -35,7 +35,3 @@ export LESS_TERMCAP_me=$'\E[0m'      # end bold mode
 
 # Don't clear the screen after quitting a man page
 export MANPAGER="less -X"
-
-# Make new shells get the history lines from all previous
-# shells instead of the default "last window closed" history
-export PROMPT_COMMAND="history -a;"
