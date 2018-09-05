@@ -8,6 +8,7 @@ source_bash_files() {
         "bash_aliases"
         "bash_exports"
         "bash_options"
+        "bash_history"
         "inputrc"
     )
 
