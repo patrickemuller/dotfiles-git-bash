@@ -6,7 +6,6 @@ source_bash_files() {
 
     declare -r -a FILES_TO_SOURCE=(
         "bash_aliases"
-        "bash_history"
         "bash_exports"
         "bash_options"
         "bash_logout"
