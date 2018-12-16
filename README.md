@@ -7,6 +7,10 @@
 - Alias for Rails commands
 - conEmu.xml file to match usual commands from iTerm on MacOS
 
+## Example of actual PS1
+
+![capture](https://user-images.githubusercontent.com/1644530/50055394-79363180-0135-11e9-9d6f-9b09a72d68c8.PNG)
+
 ## ROADMAP
 
 - Add support for custom PS1 prompt lines
