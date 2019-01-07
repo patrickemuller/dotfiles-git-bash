@@ -97,3 +97,9 @@ alias map="xargs -n1"
 alias q="exit"
 alias rm="rm -rf"
 alias open="start"
+
+# ----------------------------------------------------------------------
+# | Docker Commands                                                    |
+# ----------------------------------------------------------------------
+
+alias dc="docker-compose" 
