@@ -32,8 +32,7 @@ alias gri="git add --all && git commit -m 'WIP' && git rebase -i HEAD~10"
 alias rebase_master="git checkout master && git pull origin master && git checkout - && git rebase master"
 alias rebase_staging="git checkout staging && git pull origin staging && git checkout - && git rebase staging"
 alias merge_master="git checkout master && git pull --rebase && git checkout - && git rebase master && git checkout master && git merge -"
-alias delete_merged="git branch --merged | grep -v '^* master$' | grep -v '^  master$' | grep -v '^* staging$' | grep -v '^  staging$' | xargs git branch -d"
-alias clean_branches="git checkout master && git pull origin master &&  git checkout staging && git pull origin staging && git checkout master && git remote update --prune && delete_merged"
+alias delete_merged="git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d"
 
 # ----------------------------------------------------------------------
 # | Rails                                                              |
