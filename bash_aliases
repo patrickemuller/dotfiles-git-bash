@@ -102,3 +102,5 @@ alias open="start"
 # ----------------------------------------------------------------------
 
 alias dc="docker-compose" 
+alias rspec="docker-compose run rails bin/rspec"
+alias rubocop="docker-compose run rails bin/rubocop"
