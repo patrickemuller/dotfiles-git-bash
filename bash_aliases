@@ -8,7 +8,6 @@ alias ~="cd ~"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias cd..="cd .."
 
 # ----------------------------------------------------------------------
 # | Git                                                                |
@@ -29,10 +28,6 @@ alias gppm="git push production master"
 alias gr="git rebase -i HEAD~10"
 alias gc="git commit -m "
 alias gri="git add --all && git commit -m 'WIP' && git rebase -i HEAD~10"
-alias rebase_master="git checkout master && git pull origin master && git checkout - && git rebase master"
-alias rebase_staging="git checkout staging && git pull origin staging && git checkout - && git rebase staging"
-alias merge_master="git checkout master && git pull --rebase && git checkout - && git rebase master && git checkout master && git merge -"
-alias delete_merged="git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d"
 
 # ----------------------------------------------------------------------
 # | Rails                                                              |
@@ -66,20 +61,6 @@ alias migrate_stag="heroku run rake db:migrate --remote staging"
 alias migrate_prod="heroku run rake db:migrate --remote production"
 alias reset_stag_db="heroku pg:reset --remote staging DATABASE && heroku run rake db:migrate --remote staging && heroku run rake db:seed --remote staging && heroku restart --remote staging"
 alias reset_prod_db="heroku pg:reset --remote production DATABASE && heroku run rake db:migrate --remote production && heroku run rake db:seed --remote production && heroku restart --remote production"
-
-# ----------------------------------------------------------------------
-# | Package Managers                                                   |
-# ----------------------------------------------------------------------
-
-# npm
-# https://docs.npmjs.com/
-
-if [ -x "$(command -v npm)" ]; then
-    alias npmi="npm install"
-    alias npmr="npm uninstall"
-    alias npms="npm search"
-    alias npmu="npm update"
-fi
 
 # ----------------------------------------------------------------------
 # | Shorter Commands                                                   |

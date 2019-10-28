@@ -6,6 +6,7 @@ declare -r -a FILES_TO_SOURCE=(
   "gitconfig"
   "bash_aliases"
   "bash_exports"
+  "bash_functions"
   "bash_history"
   "bash_logout"
   "bash_options"
